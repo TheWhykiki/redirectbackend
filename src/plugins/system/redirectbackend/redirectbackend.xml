@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system">
+	<name>plg_system_redirectbackend</name>
+	<author>pageup.gr</author>
+	<creationDate>Feb 2017</creationDate>
+	<copyright>Copyright (C) 2017 - 2020 pageup.gr. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@pageup.gr</authorEmail>
+	<authorUrl>pageup.gr</authorUrl>
+	<version>1</version>
+	<description>Using this simple plugin you may allow your site admins to be redirected on a curtain component on backend login.</description>
+	<files>
+		<filename plugin="redirectbackend">redirectbackend.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+
+	</files>
+	<!--<languages>
+		<language tag="en-GB">en-GB.plg_system_gozenonepage.ini</language>
+		<language tag="en-GB">en-GB.plg_search_categories.sys.ini</language>
+	</languages>-->
+	<!--<install>
+		<sql>
+		    <file driver="mysql" charset="utf8">sql/install.sql</file>
+		</sql>
+	    </install>
+	    <uninstall>
+		<sql>
+		    <file driver="mysql" charset="utf8">sql/uninstall.sql</file>
+		</sql>
+	    </uninstall>-->
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field name="redirect_component" type="text"
+					default=""
+					description="The component to redirect into..."
+					label="Redirect Component:"
+					size="5"
+				/>
+
+				<field name="view_name" type="text"
+					default=""
+					label="The view name:"
+					size="5"
+				/>
+
+				<field name="redirect_usergroups" type="usergrouplist"
+					label="Redirect Usergroups:"
+					description="The groups that will be redirected"
+					multiple="true" />
+
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>
