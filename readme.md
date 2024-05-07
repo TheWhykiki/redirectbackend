@@ -1,4 +1,4 @@
-!#Joomla 4 / 5 Ready Version: Redirect On Backend Login from Extensions Directory
+# Joomla 4 / 5 Ready Version: Redirect On Backend Login from Extensions Directory
 
 Because I needed the plugin for a project and couldn't find another one quickly, I grabbed Redirect On Backend Plugin from the Joomla Extensions and made it ready for Joomla 4 / 5.
 
